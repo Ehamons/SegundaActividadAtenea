@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
-    <header>
+    <!-- Header -->
+    <header class="encabezado">
         <h1>Centro médico Backend</h1>
     </header>
-    <main>
+    <!-- Main -->
+    <main class="contenido">
         <h2>Consulta de citas medicas</h2>
         <div class="container-form">
             <form method="post" action="/consulta-cita">
                 <label for="especialidad">Especialidad:</label>
                 <select name="especialidad" id="especialidad" required>
-                    <option value="">----------Seleccione una opcion-----------</option>
+                    <option value="" selected disabled>----------Seleccione una opcion-----------</option>
                     <option value="Medicina general">Medicina general</option>
                     <option value="Cardiología">Cardiología</option>
                     <option value="Medicina interna">Medicina interna</option>
@@ -31,9 +33,14 @@
             <a href="../index.html"><input type="button" value="Volver"></a>
         </div>
     </main>
-    <footer>
-        <h2>Realizado por:</h2>
-        <p>Grupo 1 desarrollo web backend</p>
-    </footer>
+    <!-- Footer -->
+    <footer class="pie_pagina">
+        <p>
+          2023. Hecho por
+          <a href="https://ehamons.github.io/Portafolio-Elkin/" target="_blank"
+            >Elkin Hamón</a
+          >
+        </p>
+      </footer>
 </body>
 </html>
