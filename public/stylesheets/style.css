@@ -6,33 +6,23 @@ body {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #dcdcdc;
-  color: #333;
-  margin: 0;
-  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: hsl(0, 0%, 86%);
+  color: hsl(0, 0%, 20%);
 }
 
-header, footer {
-  background-color: cornflowerblue;
-  color: #fff;
-  padding: 20px;
+.encabezado,
+.pie_pagina {
+  background-color: hsl(219, 79%, 66%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer{
-  position: static;
-  bottom: 0;
-  width: 100%;
-}
-
-footer p {
-  text-align: center;
-}
-
-h1,
-h2 {
-  margin-top: 20px;
-  text-align: center;
+.encabezado {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
 }
 
 main {
@@ -40,15 +30,59 @@ main {
   margin: auto;
 }
 
-li{
-  list-style: none;
-  display: inline-block;
-  padding: 20px;
+.pie_pagina {
+  color: hsl(0, 0%, 86%);
+  padding: 10px 8px;
+  margin-top: auto;
 }
 
-/* Estilos CSS para el formulario */
+.pie_pagina a {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
 
-.container-form{
+.titulo_seccion {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Listado servicios */
+.listado-container {
+  max-width: 70%;
+}
+
+.item-lista {
+  position: relative;
+  max-width: 85%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2.2rem auto;
+  box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.enlace {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  color: hsl(0, 0%, 27%);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.listado-servicios li::marker {
+  content: 🐾;
+}
+
+/* Formularios */
+
+.container-form {
   max-width: 50%;
   margin: auto;
 }
@@ -65,7 +99,7 @@ select {
   width: 100%;
   margin-bottom: 15px;
   padding: 10px;
-  border: 2px solid #ccc;
+  border: 2px solid hsl(0, 0%, 80%);
   border-radius: 4px;
   font-size: 16px;
   font-family: sans-serif;
@@ -74,8 +108,8 @@ select {
 
 input[type="submit"],
 input[type="button"] {
-  background-color: cornflowerblue;
-  color: white;
+  background-color: hsl(219, 79%, 66%);
+  color: hsl(0, 0%, 100%);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -86,14 +120,14 @@ input[type="button"] {
 }
 
 input[type="submit"]:hover {
-  background-color: cornflowerblue;
+  background-color: hsl(219, 79%, 66%);
 }
 
 span {
-  color: red;
+  color: hsl(0, 100%, 50%);
 }
 
-/* Estilos CSS para las tablas */
+/* Tablas */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -106,18 +140,16 @@ th,
 td {
   padding: 10px;
   text-align: center;
-  border: 5px solid cornflowerblue;
-  background-color: cornflowerblue;
-
-
+  border: 5px solid hsl(219, 79%, 66%);
+  background-color: hsl(219, 79%, 66%);
 }
 
 td {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: hsl(0, 0%, 95%);
   font-weight: bold;
 }
 
@@ -125,22 +157,11 @@ th {
   max-width: 80%;
 }
 
-.listado-container {
-  max-width: 70%;
-}
+
 .boton-container {
   margin-block: 30px;
 }
-a{
+
+a {
   text-decoration: none;
 }
-.listado-servicios a {
-  color: cornflowerblue;
-  font-size: 20px;
-}
-
-.listado-servicios li::marker {
-  content: 🐾;
-}
-
-
